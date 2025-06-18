@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>Projets</title>
+    <style>
+        #grad1 {
+            height: 20px;
+            background-image: linear-gradient( #ddd, white);
+        }
+        #grad2 {
+            height: 20px;
+            background-image: linear-gradient(to bottom, white, #e3e1e1);
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 20px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: gray;
+            transform: translateY(-2px);
+        }
+        .navbar .left {
+            font-size: 16px;
+            font-weight: normal;
+            color: black;
+        }
+
+        .navbar .right {
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+        }
+        .content {
+            padding-top: 120px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1; /* <-- Ajoute ceci pour occuper l’espace dispo */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            padding: 0px;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        img.logotoppage {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        img.logolink {
+            width: auto;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        a.btnlink {
+            color: black;
+
+            padding: 16px;
+            margin-top: 1%;
+            margin-bottom: 3%;
+            width: 100%;
+            max-width: 600px;
+
+            text-decoration: none;
+            font-size: 18px;
+            font-family: system-ui,-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei UI,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-weight: bold;
+
+            border: 3px solid black;
+            box-shadow: 8px 8px 0px black;
+        }
+
+        .textalign {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a.btnlink:hover {
+            box-shadow: none;
+
+            transform: translate(8px, 8px);
+        }
+
+        .grey {
+            background-color: rgb(114, 114, 114);
+        }
+        .rectangle {
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            font-family: "Montserrat", sans-serif; /* Corrigé l'orthographe */
+            width: 100%;
+            display: flex;
+            justify-content: center;  /* Centrage horizontal */
+            align-items: center;      /* Centrage vertical */
+            color: black;
+        }
+
+        .rectangle a {
+            color: black;
+
+            font-family: "Monserrat", sans-serif;
+            text-decoration: none;
+            text-align: center;
+        }
+        .rectangle p {
+            margin: 0; /* Supprime les marges par défaut du <p> */
+        }
+
+        .rectcenter {
+            text-align: center;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        .rectangle a:hover {
+            text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left"><a href= "index.html">Acceuil</a></div>
+        <div class="right"><a href="#contact"> Contact</a></div>
+    </div>
+    <div id="grad1"></div>
+
+    <div class="content">
+
+        <h3>Projet Solidworks: Conception d’un réducteur</h3>
+
+        <a class="btnlink" href="Projets/Reducteur/compte_rendu_reducteur.pdf"><div class="textalign"><img src="" class="logolink">Compte rendu</div></a>
+
+        <a class ="btnlink" href="Projets/Reducteur/Projet_SW_2024.pdf"><div class="textalign"><img src="" class="logolink">Cahier des charges</div></a>
+
+    </div>
+    <div id="grad2"></div>
+
+    <div class="rectangle" id = "contact">
+        <p><B>Contact</B>: Mail et téléphone sur le CV</p>
+    </div>
+
+
+</body>
+</html>
