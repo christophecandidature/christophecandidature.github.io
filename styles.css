@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+#accueil {
+    
+    width: 90vw;
+    margin: auto;
+    border: white 1px;
+    background-color: white;
+
+}
+
+#accueil h2 {
+    color: #A45EE5 ;
+    text-align: center;
+}
+  
+#apropos {
+    width: 90vw;
+    margin: auto;
+    background-color: white;
+}
+
+#contact {
+    width: 90vw;
+    margin: auto;
+    background-color: white;
+}
+
+#francais {
+    width: 90vw;
+    margin: auto;
+    background-color: white;
+}
+
+#anglais {
+    width: 90vw;
+    margin: auto;
+    background-color: white;
+
+}
+#autre {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+
+#wrappercontact {
+    border: black solid 1px;
+}
+
+
+#details {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    border: red solid 1px
+}
+
+#formphp {
+    display: inline-block;
+    width: 70%;
+    vertical-align: bottom;
+    border: green solid 1px;
+}
+
+
+h2 {
+    color: #A45EE5;
+    text-align: center;
+}
+
+body {
+    font-family: Verdana, BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.logo {
+    cursor: pointer;
+    padding: 15px;
+    display: block;
+}
+
+.mainimage {
+    display:flex;
+    width:80%;
+}
+
+
+.logopetit {
+    display: none;
+    height: 150px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:  white;
+  }
+
+.topnav a {
+    padding: 30px 30px;
+    color: black;
+
+}
+  
+.topnav a:hover {
+    color: #ddd;
+}
+  
+.topnav a.active {
+    color: black;
+}
+
+.topnav a.active:hover {
+    color: #ddd;
+}
+
+#grad1 {
+    height: 20px;
+    background-image: linear-gradient( #ddd, white);
+}
+
+#grad2 {
+    height: 20px;
+    background-image: linear-gradient( white, #ddd);
+}
+
+
+.rectangle {
+    height: 300px;
+    background-color: #A45EE5;
+    font-family: "Monteserrat", sans-serif;
+    width: 100%;
+    display: block;
+    color: white;
+}
+
+.rectangle a {
+    color: white;
+    font-family: "Monserrat", sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.rectcenter {
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.rectangle a:hover {
+    text-decoration: underline;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #F4952C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=file] {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #ddd;
+}
+  
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+  }
+
+
+.sidenav {
+    display: none;
+}
+.openbtn {
+    display: none;
+}
+
+/* https://entreprendre.service-public.fr/vosdroits/F31228/personnalisation/resultat?lang=&quest0=1&quest= 
+https://www.youtube.com/watch?v=ZYV6dYtz4HA
+*/
+
+@media screen and (max-width: 1025px) {
+    .logo {
+        display: none;
+    }
+    .logopetit {
+        cursor: pointer;
+        padding: 15px;
+        display: block;
+    }
+
+
+    /*.topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .logopetit {
+        cursor: pointer;
+        padding: 15px;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }*/
+
+    .topnav a {
+        display: none;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #A45EE5;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+        display: block;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 64px;
+        text-decoration: none;
+        font-size: 150%;
+        color: white;
+        transition: 0.3s;
+      
+      }
+      
+      .sidenav a:hover{
+        color: white;
+        text-decoration: underline;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_full*/
